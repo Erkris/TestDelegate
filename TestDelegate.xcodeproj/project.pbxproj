@@ -10,10 +10,11 @@
 		B8388A261A3988C7001CEE9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8388A251A3988C7001CEE9D /* main.m */; };
 		B8388A291A3988C7001CEE9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8388A281A3988C7001CEE9D /* AppDelegate.m */; };
 		B8388A2C1A3988C7001CEE9D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8388A2B1A3988C7001CEE9D /* ViewController.m */; };
-		B8388A2F1A3988C7001CEE9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8388A2D1A3988C7001CEE9D /* Main.storyboard */; };
 		B8388A311A3988C7001CEE9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8388A301A3988C7001CEE9D /* Images.xcassets */; };
 		B8388A341A3988C7001CEE9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8388A321A3988C7001CEE9D /* LaunchScreen.xib */; };
 		B8388A401A3988C7001CEE9D /* TestDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8388A3F1A3988C7001CEE9D /* TestDelegateTests.m */; };
+		B8388A4B1A3995AC001CEE9D /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8388A4A1A3995AC001CEE9D /* ColorPickerViewController.m */; };
+		B8388A4E1A399DD3001CEE9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8388A4C1A399DD3001CEE9D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +35,14 @@
 		B8388A281A3988C7001CEE9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B8388A2A1A3988C7001CEE9D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B8388A2B1A3988C7001CEE9D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B8388A2E1A3988C7001CEE9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8388A301A3988C7001CEE9D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B8388A331A3988C7001CEE9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B8388A391A3988C7001CEE9D /* TestDelegateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDelegateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8388A3E1A3988C7001CEE9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8388A3F1A3988C7001CEE9D /* TestDelegateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDelegateTests.m; sourceTree = "<group>"; };
+		B8388A491A3995AC001CEE9D /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
+		B8388A4A1A3995AC001CEE9D /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
+		B8388A4D1A399DD3001CEE9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +84,13 @@
 		B8388A221A3988C7001CEE9D /* TestDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				B8388A4C1A399DD3001CEE9D /* Main.storyboard */,
 				B8388A271A3988C7001CEE9D /* AppDelegate.h */,
 				B8388A281A3988C7001CEE9D /* AppDelegate.m */,
 				B8388A2A1A3988C7001CEE9D /* ViewController.h */,
 				B8388A2B1A3988C7001CEE9D /* ViewController.m */,
-				B8388A2D1A3988C7001CEE9D /* Main.storyboard */,
+				B8388A491A3995AC001CEE9D /* ColorPickerViewController.h */,
+				B8388A4A1A3995AC001CEE9D /* ColorPickerViewController.m */,
 				B8388A301A3988C7001CEE9D /* Images.xcassets */,
 				B8388A321A3988C7001CEE9D /* LaunchScreen.xib */,
 				B8388A231A3988C7001CEE9D /* Supporting Files */,
@@ -199,7 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8388A2F1A3988C7001CEE9D /* Main.storyboard in Resources */,
+				B8388A4E1A399DD3001CEE9D /* Main.storyboard in Resources */,
 				B8388A341A3988C7001CEE9D /* LaunchScreen.xib in Resources */,
 				B8388A311A3988C7001CEE9D /* Images.xcassets in Resources */,
 			);
@@ -221,6 +226,7 @@
 			files = (
 				B8388A2C1A3988C7001CEE9D /* ViewController.m in Sources */,
 				B8388A291A3988C7001CEE9D /* AppDelegate.m in Sources */,
+				B8388A4B1A3995AC001CEE9D /* ColorPickerViewController.m in Sources */,
 				B8388A261A3988C7001CEE9D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,20 +250,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B8388A2D1A3988C7001CEE9D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B8388A2E1A3988C7001CEE9D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B8388A321A3988C7001CEE9D /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B8388A331A3988C7001CEE9D /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		B8388A4C1A399DD3001CEE9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8388A4D1A399DD3001CEE9D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
