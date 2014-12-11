@@ -26,6 +26,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)filterTest:(id)sender {
+    NSArray *prenoms = @[@"Obelix", @"YellowSubmarine", @"Asterix", @"Falbala", @"Panoramix", @"Idefix", @"Zoe"];
+    BOOL (^test)(id obj, NSUInteger idx, BOOL *stop);
+    
+    test = ^(id obj, NSUInteger idx, BOOL *stop) {
+        NSString *str = (NSString *)obj;
+        if ([str caseInsensitiveCompare:@"G"] == NSOrderedDescending) {
+            return YES;
+        } else {
+            return NO;
+        }
+    };
+    
+    NSIndexSet *indexes = [prenoms indexesOfObjectsPassingTest:test];
+    prenoms = [prenoms objectsAtIndexes:indexes];
+    
+    NSLog(@"%@", indexes);
+    NSLog(@"%@", prenoms);
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -34,11 +55,11 @@
     // Pass the selected object to the new view controller.
     if ([segue.identifier isEqualToString:@"PickColor"]) {
         ColorPickerViewController *desinationController = [segue destinationViewController];
-        desinationController.delegate = self;
+        desinationController.completionHandler = ^(UIColor *color){
+            [self userDidChooseColor:color];
+        };
     }
 }
-
-#pragma mark - Color Picker Delegate
 
 -(void)userDidChooseColor:(UIColor *)color {
     _chooseColor = self.view.backgroundColor;

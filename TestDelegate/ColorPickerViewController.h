@@ -8,14 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol ColorPickerDelegate <NSObject>
-
--(void)userDidChooseColor:(UIColor *)color;
-
-@end
+typedef void (^ColorPickerCompletionHandler)(UIColor *color);
 
 @interface ColorPickerViewController : UIViewController
 
-@property(nonatomic, weak)id<ColorPickerDelegate> delegate;
+@property(nonatomic, copy) ColorPickerCompletionHandler completionHandler;
 
 @end

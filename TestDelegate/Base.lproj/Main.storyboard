@@ -23,6 +23,16 @@
                                     <segue destination="rZ4-pC-On4" kind="modal" identifier="PickColor" id="dX5-yH-C7H"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4vZ-GS-Qfj">
+                                <rect key="frame" x="143" y="477" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Filter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="filterTest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SWm-Mf-eZr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.32156862749999998" green="0.33333333329999998" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

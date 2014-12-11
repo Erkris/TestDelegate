@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ColorPickerViewController.h"
 
-@interface ViewController : UIViewController <ColorPickerDelegate, UIAlertViewDelegate>
+@interface ViewController : UIViewController <UIAlertViewDelegate>
 
 
 @end
